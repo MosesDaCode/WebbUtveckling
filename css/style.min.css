@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+.button-primary {
+  display: flex;
+  padding: 11px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+  color: white;
+  background-color: #6366F1;
+  border: none;
+}
+
+header {
+  padding: 20px 0;
+}
+@media (min-width: 992px) {
+  header {
+    padding: 20px 0;
+  }
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .site-navigation {
+  display: flex;
+  align-items: center;
+}
+header .container .site-navigation .logo {
+  margin-right: 40px;
+}
+header .container .site-navigation nav {
+  display: none;
+  color: #33354D;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 25.6px */
+}
+@media (min-width: 1200px) {
+  header .container .site-navigation nav {
+    display: inline-block;
+  }
+}
+header .container .site-navigation nav a {
+  color: #33354D;
+  text-decoration: none;
+  margin-right: 20px;
+}
+header .container .site-settings {
+  display: none;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .site-settings {
+    display: flex;
+  }
+}
+header .container .site-settings .theme-mode {
+  display: flex;
+  align-items: center;
+}
+header .container .site-settings svg {
+  margin-top: 17px;
+}
+header .container .site-settings .signin-signup {
+  margin-left: 20px;
+}
+header .container .mobile-nav {
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #33354D;
+}
+@media (min-width: 1200px) {
+  header .container .mobile-nav {
+    display: none;
+  }
+}
