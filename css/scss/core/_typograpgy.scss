@@ -1,0 +1,123 @@
+.navlink{
+    line-height: 160%;
+    font-weight: 600;
+    color: $grey-800;
+    font-family: $font-manrope;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus{
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+h1{
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+}
+h2{
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+
+}
+h3{
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+
+}
+h4{
+    font-size: 24px;
+    @include standard-heading;
+
+
+}
+h5{
+    font-size: 20px;
+    @include standard-heading;
+
+
+}
+h6{
+    font-size: 16px;
+    @include standard-heading;
+
+
+}
+
+
+display-1{
+    font-size: 80px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+}
+display-2{
+    font-size: 72px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+
+}
+display-3{
+    font-size: 64px;
+    line-height: 130%;
+    font-weight: 800;
+    color: $grey-900;
+
+}
+display-4{
+    font-size: 56px;
+    @include standard-heading;
+
+
+}
+display-5{
+    font-size: 48px;
+    @include standard-heading;
+
+
+}
+display-6{
+    font-size: 42px;
+    @include standard-heading;
+
+}
+
+
+
+.text-lead{
+    @include standard-text;
+    font-size: 24px;
+}
+.text-xl{
+    @include standard-text;
+    font-size: 20px;
+}
+.text-lg{
+    @include standard-text;
+    font-size: 18px;
+}
+.text-m{
+    @include standard-text;
+    font-size: 16px;
+}
+.text-s{
+    @include standard-text;
+    font-size: 14px;
+}
+.text-xs{
+    @include standard-text;
+    font-size: 12px;
+}
+
+

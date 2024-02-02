@@ -1,69 +1,86 @@
 header{
-    padding: 20px 0;
-    @include lg{
-        padding: 20px 0;
-    }
 
     .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-
-        .site-navigation{
-            display: flex;
-            align-items: center;
-    
-            .logo{
-                margin-right: 40px;
-            }
-
-            nav{
-                display: none;
-                @include font-navigation;
-                @include xl{
-                    display: inline-block;
-                }
-
-                a{
-                    color: $grey-800;
-                    text-decoration: none;
-                    margin-right: 20px;
-                }
-            }
-        }
-    
-        .site-settings{
-            display: none;
-            align-items: center;
-            @include xl{
-                display: flex;
-            }
-            .theme-mode{
-                display: flex;
-                align-items: center;
-            }
-        
-            svg{
-                margin-top: 17px;
-            }
-    
-            .signin-signup{
-                margin-left: 20px;
-            }
-        }
-        .mobile-nav{
-            background-color: transparent;
-            border: none;
-            font-size: 2.5rem;
-            color: $grey-800;
-            
-            @include xl{
-                display: none;
-            }
-        }
+        gap: 20px;
     }
+}
+
+
+
+// header{
+//     padding: 20px 0;
+//     @include lg{
+//         padding: 20px 0;
+//     }
+
+
+//     .container{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+
+
+//         .site-navigation{
+//             display: flex;
+//             align-items: center;
+    
+//             .logo{
+//                 margin-right: 40px;
+//             }
+
+//             nav{
+//                 display: none;
+//                 @include font-navigation;
+//                 @include xl{
+//                     display: inline-block;
+//                 }
+
+//                 a{
+//                     color: $grey-800;
+//                     text-decoration: none;
+//                     margin-right: 20px;
+//                 }
+//             }
+//         }
+    
+//         .site-settings{
+//             display: none;
+//             align-items: center;
+//             @include xl{
+//                 display: flex;
+//             }
+//             .theme-mode{
+//                 display: flex;
+//                 align-items: center;
+//             }
+        
+//             svg{
+//                 margin-top: 17px;
+//             }
+    
+//             .signin-signup{
+//                 margin-left: 20px;
+//             }
+//         }
+//         .mobile-nav{
+//             background-color: transparent;
+//             border: none;
+//             font-size: 2.5rem;
+//             color: $grey-800;
+            
+//             @include xl{
+//                 display: none;
+//             }
+//         }
+//     }
 
    
-}
+// }
 
