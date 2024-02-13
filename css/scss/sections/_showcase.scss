@@ -1,65 +1,87 @@
-#showcase{
-    
+#showcase {
     background: $gradient-background;
-    .container{
+
+    @include lg {
+        padding-top: 40px;
+    }
+
+    .container {
         display: grid;
         grid-template-columns: 1fr auto;
-        grid-template-areas: "img"
+        grid-template-areas:    "img"
                                 "content";
-        
 
-        @include lg{
+        @include md {
+            grid-template-columns: 1fr 1fr;
+            align-items: end;
             grid-template-areas: "content img";
             gap: 50px;
         }
+        @include lg {
+            align-items: stretch;
+            grid-template-areas: "content img";
+            gap: 100px;
+        }
 
-        .content{
+        .content {
             grid-area: content;
             text-align: center;
             padding: 20px;
 
-            @include ld{
+            @include lg {
                 text-align: left;
                 display: grid;
                 grid-template-rows: auto auto 1fr auto;
-                padding-top: 80px; 
+                padding: 0;
             }
 
-            h1{
+
+            h1 {
                 @include h1;
 
-                @include lg{
+                @include lg {
                     @include d4;
-                    padding: 40px;
-                    
+                    padding-top: 80px;
                 }
             }
 
-            .download-app{
+            .download-app {
                 display: flex;
                 justify-content: center;
                 gap: 20px;
-                margin: 40px 0
+                margin: 40px 0;
+
+                @include lg {
+                    justify-content: flex-start;
+                }
+
+                img{
+                    width: 100%;
+                }
             }
 
-            .more{
+            .more {
+                margin-bottom: 20px;
                 @include text-m;
 
-                i{
+                i {
                     margin-right: 8px;
                 }
-            }        
-
+            }
         }
 
-        #showcase-image{
+        #showcase-image {
             grid-area: img;
+            align-items: baseline;
+            height: 100%;
             width: 100%;
             padding: 20px 40px;
 
-            @include lg{
+            @include md {
                 padding: 0;
+
             }
         }
+
     }
 }
