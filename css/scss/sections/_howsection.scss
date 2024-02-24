@@ -1,0 +1,59 @@
+#how{
+    background-color: $gray-100;
+    padding: 50px 0;
+
+    
+
+    .how-title{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .how-content{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 50px;
+        margin: 30px 0;
+        align-items: center;
+
+        .slides {
+            display: flex; 
+            justify-content: space-between;
+
+            .opacity-pic{
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    .how-btn{
+        border: none;
+        display: flex;
+        background-color: #FFFFFF;
+        color: $gray-700;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        left: 8rem;
+        @include shadow-s;
+    }
+
+    .second-step{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 642px;
+        
+        
+        @include md{
+            margin: 0  0 0 260px;
+        }
+        
+        
+    }
+}
