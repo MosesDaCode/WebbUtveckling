@@ -43,15 +43,19 @@
     }
 
     .second-step{
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 642px;
+
         
         
         @include md{
             margin: 0  0 0 260px;
+        }
+
+        @include lg{
+            margin: 55px 0 0 355px;
         }
         
         

@@ -1,1 +1,106 @@
-// 
+#more-info{
+    
+    
+    .info-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        width: 1076px;
+        height: 1080px;
+        position: relative;
+        left: 8.5rem;
+
+        .info-title{
+            padding: 75px 0 100px 3px ;
+            color: $gray-900;
+            width: 410px;
+            margin-right: 205px;
+        }
+        .short-info{
+            display: flex;
+            gap: 15px;
+
+            p{
+                @include text-m;
+                color: $gray-700;
+            }
+    
+            i{
+                padding-top: 5px;
+                color: $primary ;
+            }
+        }
+    
+        .last-info-container{
+            display: grid;
+            width: 526px;
+            height: 362px;
+            margin-top: 80px;
+            position: relative;
+            bottom: 24rem;
+            left: 35.5rem;
+
+            
+
+            p{
+                width: 250px;
+                padding-top: 10px;
+                margin: 0;
+            }
+            .after-pic-short-info{
+                display: flex;
+            }
+        }
+        
+        .learn-more-btn{ 
+            background-color: $primary;
+            border-radius: 10px;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            width: 117px;
+            height: 44px;
+            cursor: pointer;
+            
+            .btn{
+                color: white;
+                position: relative;
+                right: 2.5rem;
+                bottom: 1rem;
+                width: 130px;
+                height: 44px;
+                font-size: 14px;
+
+            }
+            i{
+                margin-left: 9px;
+            }
+             
+           
+        }
+
+        .first-pic{
+            position: relative;
+            right: 1.5rem;
+            top: 1.5rem;
+        }
+
+        .small-pic{
+            position: relative;
+            left: 50rem;
+            bottom: 5.5rem;
+        }
+
+        .single-pic{
+            position: relative;
+            right: 16rem;
+            top: 8rem;
+        }
+        
+
+    }
+    
+    
+}

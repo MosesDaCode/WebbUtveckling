@@ -1,0 +1,125 @@
+#reviews{
+
+    .review-container{
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        width: 100%;
+        height: 542px;
+        margin: 75px 0;
+        background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+        
+        .left-side-review{
+            width: 100%;
+            position: relative;
+            .review-title{
+                width: 300px;
+                position: absolute;
+                left: 155px;
+                top: 85px;
+            }
+            
+            .btn-container{
+                display: flex;
+                gap: 16px;
+                position: absolute;
+                top: 250px;
+                left: 150px;
+
+            }
+            .review-btn{
+                border: none;
+                display: inline-flex;
+                background-color: #ffffff;
+                color: $gray-700;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                gap: 14px;
+                justify-content: center;
+                align-items: center;
+                
+                @include shadow-s;
+            }
+        }
+               
+        
+
+        .review-boxes{
+            display: flex;
+            position: absolute;
+            left: 600px;
+            top: 45px;
+            padding: 45px 0;
+            gap: 24px;
+            
+            .box{
+                display: flex;
+                position: relative;
+                box-sizing: border-box;
+                width: 416px;
+                height: 329px;
+                padding: 48px 24px 24px 24px;
+                gap: 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                
+
+                @include shadow-s;
+                
+                border-radius: 8px;
+                background: white;
+
+                
+            }
+            
+
+            
+
+            .box-quote{
+                display: flex;
+                position: absolute;
+                bottom: 315px;
+                left: 15px;
+                background-color: $primary;
+                color: white;
+                height: 44px;
+                width: 44px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+            }
+            
+            .box-content{
+
+                .box-stars{
+                    padding-bottom: 25px;
+                }
+
+                .box-user{
+                    // border: 1px solid red;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 15px;
+
+                    
+                    p{
+                        @include text-s
+                    }
+
+                    .user{
+                        // border: 1px solid red;
+                        
+                        h6{
+                            margin: 0;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
