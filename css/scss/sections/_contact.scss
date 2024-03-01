@@ -1,6 +1,5 @@
 
 .wrapper{
-    border: 1px solid red;
     
     header{
         background-color: $gray-100;
@@ -9,21 +8,18 @@
     
 }
 #contact{
-    border: 1px solid red;
     padding: 20px 0;
     height: 665px;
     background-color: $gray-100;
 
 
     .contact-container{
-        border: 1px solid red;
         position: relative;
 
 
     }
     
     .links{
-        border: 1px solid red;
         display: flex;
         gap: 20px;
 
@@ -40,14 +36,11 @@
     }
 
     .contact-info{
-        border: 1px solid red;
         display: grid;
         gap: 15px;
 
 
         .mail{
-            border: 1px solid red;
-
             display: flex;
             gap: 20px;
 
@@ -97,7 +90,6 @@
         }
 
         .career{
-            border: 1px solid red;
             display: flex;
             gap: 20px;
             .career-img{
@@ -148,7 +140,6 @@
     }
 
     .form{
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
         gap: 70px;
@@ -166,7 +157,6 @@
         @include shadow-l;
 
         h2{        
-            border: 1px solid red;
             display: grid;
             align-items: start;
             padding-top: 20px;
@@ -174,7 +164,6 @@
         }
         
         .consultation-form{
-            border: 1px solid red;
             margin-top: -50px;
             input, select{
                 display: grid;
@@ -214,7 +203,7 @@
             }
             .consultation-btn{
                 display: flex;
-                margin-top: 55px;
+                margin-top: 65px;
                 border: none;
                 width: 229px;
                 height: 52px;

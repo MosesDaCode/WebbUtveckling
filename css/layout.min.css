@@ -1051,25 +1051,19 @@ footer #footer-container .rights {
   font-size: 14px;
 }
 
-.wrapper {
-  border: 1px solid red;
-}
 .wrapper header {
   background-color: #F3F6FF;
 }
 
 #contact {
-  border: 1px solid red;
   padding: 20px 0;
   height: 665px;
   background-color: #F3F6FF;
 }
 #contact .contact-container {
-  border: 1px solid red;
   position: relative;
 }
 #contact .links {
-  border: 1px solid red;
   display: flex;
   gap: 20px;
 }
@@ -1082,12 +1076,10 @@ footer #footer-container .rights {
   padding: 40px 0;
 }
 #contact .contact-info {
-  border: 1px solid red;
   display: grid;
   gap: 15px;
 }
 #contact .contact-info .mail {
-  border: 1px solid red;
   display: flex;
   gap: 20px;
 }
@@ -1133,7 +1125,6 @@ footer #footer-container .rights {
   padding-left: 10px;
 }
 #contact .contact-info .career {
-  border: 1px solid red;
   display: flex;
   gap: 20px;
 }
@@ -1179,7 +1170,6 @@ footer #footer-container .rights {
   padding-left: 10px;
 }
 #contact .form {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -1195,14 +1185,12 @@ footer #footer-container .rights {
   box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
 }
 #contact .form h2 {
-  border: 1px solid red;
   display: grid;
   align-items: start;
   padding-top: 20px;
   width: 500px;
 }
 #contact .form .consultation-form {
-  border: 1px solid red;
   margin-top: -50px;
 }
 #contact .form .consultation-form input, #contact .form .consultation-form select {
@@ -1234,7 +1222,7 @@ footer #footer-container .rights {
 }
 #contact .form .consultation-form .consultation-btn {
   display: flex;
-  margin-top: 55px;
+  margin-top: 65px;
   border: none;
   width: 229px;
   height: 52px;
@@ -1245,4 +1233,59 @@ footer #footer-container .rights {
   background-color: #6366F1;
   color: white;
   font-weight: 600;
+}
+
+#map-section {
+  height: 2000px;
+}
+#map-section .map {
+  margin-top: 275px;
+  display: flex;
+  gap: 150px;
+}
+#map-section .map .address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#map-section .map .address .social-media {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 0;
+  gap: 10px;
+}
+#map-section .map .address .social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  background-color: #EFF2FC;
+}
+#map-section .map .adress-info {
+  display: grid;
+  gap: 0px;
+  width: 450px;
+}
+#map-section .map .adress-info h4 {
+  padding-bottom: 10px;
+}
+#map-section .map .adress-info .info {
+  display: flex;
+  align-items: center;
+}
+#map-section .map .adress-info .info .phone, #map-section .map .adress-info .info .map-dott {
+  padding: 0 5px 10px 0;
+}
+#map-section .map .adress-info .info .clock {
+  padding: 0 5px 41px 0;
+}
+#map-section .map .adress-info .info p {
+  color: #565973;
+}
+#map-section .map .adress-info .info .mon-sun {
+  color: #0B0F19;
+  font-weight: 700;
 }
