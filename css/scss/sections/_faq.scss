@@ -1,0 +1,176 @@
+#faq{
+
+    .faq-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 170px 0;
+        height: 600px;
+
+        .left-side{
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            gap: 25px;
+        }
+
+        .title{
+            display: grid;
+            width: 416px;
+            gap: 10px;
+
+            p{
+                @include text-lg
+            }
+        }
+
+        .contact-box{
+            display: flex;
+            gap: 25px;
+            width: 420px;
+            
+            .box{
+                display: grid;
+                width: 196px;
+                padding: 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+
+                border-radius: 8px;
+                border: 1px solid $gray-300;
+
+                p{
+                    @include text-s
+                }
+
+                .contact-btn{
+                    display: flex;
+                    align-items: center;
+                    border-radius: 8px;
+                    gap: 15px;
+                    border: none;
+                    background-color: white;
+                    
+                    
+                }
+                
+
+                #purple{
+                    color: $primary;
+                }
+                #green{
+                    color: $success;
+                }
+            }
+        }
+
+
+        .right-side{
+            display: grid;
+            
+            
+            .accordion{
+                display: flex;
+                justify-content: space-between;
+                height: 68px;
+                gap: 24px;
+                border: none;
+                padding: 10px 24px;
+                align-items: center;
+                align-self: stretch;
+
+                background-color: white;
+                border-radius: 8px;
+                @include shadow-m
+
+            }
+            
+            .fa-chevron-down{
+                display: flex;  
+                width: 36px;
+                height: 36px;
+                padding: 8px;
+                justify-content: center;
+                align-items: center;
+                
+
+                border-radius: 40px;
+                background-color: $gray-100;
+            }
+
+            .fa-chevron-up{
+                display: flex;
+                width: 36px;
+                height: 36px;
+                justify-content: center;
+                align-items: center;
+
+                border: none;
+                border-radius: 50%;
+                color: white;
+                background-color:  $primary;
+            }
+            .panel{
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                padding: 0 24px;
+            }
+        }
+    }
+    .subscribe-container{
+
+        .container{
+            height: 222px;
+            background-color: $gray-100;
+        }
+
+        .subscribe{
+            display: inline-flex;
+            padding: 72px 110px;
+            justify-content: center;
+            align-items: center;
+            gap: 78px;
+
+            
+
+            .left-part{
+                display: flex;
+                gap: 150px;
+                
+            }
+            
+            .right-part{
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                width: 472px;
+                height: 50px;
+                gap: 10px;
+                background-color: white;
+
+                i{
+                    padding-left: 10px;
+                }
+
+                #subscribe-input{
+                    border: none !important;
+                    border-color: $gray-500;
+                    
+                }
+
+                .sub-btn{
+                    border: none;
+                    border-radius: 0 8px 8px 0;
+                    background-color: $primary;
+                    color: white;
+                    width: 142px;
+                    height: 50px;
+                }
+            }
+        }
+
+
+    }
+
+
+}
