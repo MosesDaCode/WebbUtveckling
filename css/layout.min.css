@@ -1050,3 +1050,199 @@ footer #footer-container .rights {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
 }
+
+.wrapper {
+  border: 1px solid red;
+}
+.wrapper header {
+  background-color: #F3F6FF;
+}
+
+#contact {
+  border: 1px solid red;
+  padding: 20px 0;
+  height: 665px;
+  background-color: #F3F6FF;
+}
+#contact .contact-container {
+  border: 1px solid red;
+  position: relative;
+}
+#contact .links {
+  border: 1px solid red;
+  display: flex;
+  gap: 20px;
+}
+#contact .links i {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#contact .contact-us {
+  padding: 40px 0;
+}
+#contact .contact-info {
+  border: 1px solid red;
+  display: grid;
+  gap: 15px;
+}
+#contact .contact-info .mail {
+  border: 1px solid red;
+  display: flex;
+  gap: 20px;
+}
+#contact .contact-info .mail .mail-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+#contact .contact-info .mail .mail-text {
+  display: grid;
+  width: 306px;
+  gap: 10px;
+}
+#contact .contact-info .mail .mail-text h4 {
+  display: flex;
+  gap: 10px;
+}
+#contact .contact-info .mail .mail-text p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+#contact .contact-info .mail .mail-text .mail-btn {
+  border: none;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  background-color: #F3F6FF;
+  color: #6366F1;
+  font-weight: 600;
+  width: 230px;
+  height: 50px;
+}
+#contact .contact-info .mail .mail-text .mail-btn i {
+  display: flex;
+  padding-left: 10px;
+}
+#contact .contact-info .career {
+  border: 1px solid red;
+  display: flex;
+  gap: 20px;
+}
+#contact .contact-info .career .career-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+#contact .contact-info .career .career-text {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+}
+#contact .contact-info .career .career-text h4 {
+  display: flex;
+  gap: 10px;
+}
+#contact .contact-info .career .career-text p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+#contact .contact-info .career .career-text .career-btn {
+  border: none;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  background-color: #F3F6FF;
+  color: #6366F1;
+  font-weight: 600;
+  width: 230px;
+  height: 50px;
+}
+#contact .contact-info .career .career-text .career-btn i {
+  display: flex;
+  padding-left: 10px;
+}
+#contact .form {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  width: 636px;
+  height: 718px;
+  position: absolute;
+  right: 25px;
+  top: 100px;
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 8px;
+  background: #f2f2f2;
+  box-shadow: 0px 4px 13px -2px rgba(19, 16, 34, 0.06), 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1);
+}
+#contact .form h2 {
+  border: 1px solid red;
+  display: grid;
+  align-items: start;
+  padding-top: 20px;
+  width: 500px;
+}
+#contact .form .consultation-form {
+  border: 1px solid red;
+  margin-top: -50px;
+}
+#contact .form .consultation-form input, #contact .form .consultation-form select {
+  display: grid;
+  border: 1px solid #D4D7E5;
+  border-radius: 8px;
+  width: 491px;
+  height: 52px;
+}
+#contact .form .consultation-form label {
+  color: #0B0F19;
+  font-weight: 600;
+  height: 0;
+  padding-top: 20px;
+}
+#contact .form .consultation-form .date-time {
+  padding-top: 10px;
+  display: flex;
+  width: 490px;
+  height: 82px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 21px;
+  flex-shrink: 0;
+}
+#contact .form .consultation-form .date-time .date select, #contact .form .consultation-form .date-time .time select {
+  width: 234px;
+}
+#contact .form .consultation-form .consultation-btn {
+  display: flex;
+  margin-top: 55px;
+  border: none;
+  width: 229px;
+  height: 52px;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #6366F1;
+  color: white;
+  font-weight: 600;
+}

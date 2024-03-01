@@ -1,0 +1,233 @@
+
+.wrapper{
+    border: 1px solid red;
+    
+    header{
+        background-color: $gray-100;
+        
+    }
+    
+}
+#contact{
+    border: 1px solid red;
+    padding: 20px 0;
+    height: 665px;
+    background-color: $gray-100;
+
+
+    .contact-container{
+        border: 1px solid red;
+        position: relative;
+
+
+    }
+    
+    .links{
+        border: 1px solid red;
+        display: flex;
+        gap: 20px;
+
+
+        i{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .contact-us{
+        padding: 40px 0;
+    }
+
+    .contact-info{
+        border: 1px solid red;
+        display: grid;
+        gap: 15px;
+
+
+        .mail{
+            border: 1px solid red;
+
+            display: flex;
+            gap: 20px;
+
+            .mail-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                box-sizing: border-box;
+                width: 60px;
+                height: 60px;
+                background-color: white;
+            }
+
+            .mail-text{
+                display: grid;
+                width: 306px;
+                gap: 10px;
+
+                h4{
+                    display: flex;
+                    gap: 10px;
+                    
+                    
+                }
+                p{
+                    @include text-m
+                }
+
+                .mail-btn{
+                    border: none;
+                    display: flex;
+                    padding: 30px 0;
+                    align-items: center;
+                    background-color: $gray-100;
+                    color: $primary;
+                    font-weight: 600;
+                    width: 230px;
+                    height: 50px;
+
+                    i{
+                        display: flex;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .career{
+            border: 1px solid red;
+            display: flex;
+            gap: 20px;
+            .career-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                box-sizing: border-box;
+                width: 60px;
+                height: 60px;
+                background-color: white;
+            }
+
+            .career-text{
+                display: flex;
+                flex-direction: column;
+                width: 306px;
+
+                h4{
+                    display: flex;
+                    gap: 10px;
+                    
+                    
+                }
+
+                p{
+                    @include text-m
+                }
+
+                .career-btn{
+                    border: none;
+                    display: flex;
+                    padding: 30px 0;
+                    align-items: center;
+                    background-color: $gray-100;
+                    color: $primary;
+                    font-weight: 600;
+                    width: 230px;
+                    height: 50px;
+
+                    i{
+                        display: flex;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+        width: 636px;
+        height: 718px;
+        position: absolute;
+        right: 25px;
+        top: 100px;
+        
+
+        background-color: rgb(255, 255, 255) !important;
+        border-radius: 8px;
+    
+        @include shadow-l;
+
+        h2{        
+            border: 1px solid red;
+            display: grid;
+            align-items: start;
+            padding-top: 20px;
+            width: 500px;
+        }
+        
+        .consultation-form{
+            border: 1px solid red;
+            margin-top: -50px;
+            input, select{
+                display: grid;
+                border: 1px solid $gray-400;
+                border-radius: 8px;
+                width: 491px;
+                height: 52px;
+            }
+
+            
+
+            label{
+                color: $gray-900;
+                font-weight: 600;
+                height: 0;
+                padding-top: 20px;
+            }
+
+            .date-time{
+                padding-top: 10px;
+                display: flex;
+                width: 490px;
+                height: 82px;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 21px;
+                flex-shrink: 0;
+
+
+                .date, .time{
+
+                    select{
+                        width: 234px;
+                    }
+                }
+            }
+            .consultation-btn{
+                display: flex;
+                margin-top: 55px;
+                border: none;
+                width: 229px;
+                height: 52px;
+                gap: 8px;
+                justify-content: center;
+                align-items: center;
+
+
+                border-radius: 8px;
+                background-color: $primary;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}

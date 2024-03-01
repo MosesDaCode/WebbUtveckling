@@ -11,76 +11,148 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="container">
-                <a id="logo" href="home.html"><img src="images/logo/silicon-logo-light_theme.svg" alt="silicon logotype"></a>
-
-                <nav id="menu">
-                    <div class="menu-links">
-                        <a class="nav-link" href="#overview">Overview</a>
-                        <a class="nav-link" href="#features">Features</a>
-                        <a class="nav-link" href="news.html">News</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                </nav>
-    
-                <div id="theme-mode">
-                    <div class="theme-switch-wrapper">
-                        <label for="theme-toggle-switch">Light</label>
-                        <label class="theme-switch" for="theme-toggle-switch">
-                            <input type="checkbox" id="theme-toggle-switch" />
-                            <div class="slider round"></div>
-                        </label>
-                        <label for="theme-toggle-switch">Dark</label>
-                    </div>
-                </div>
-    
-                <a id="btn-account" class="btn btn-theme" href="signin.html"><i class="fa-regular fa-user"></i> Sign in / up</a>
-                
-                <button id="btn-menu" onclick="toggleMenu()"><i class="fa-regular fa-bars"></i></button>
-            </div>
-        </header>
-    <main>
-
-        
-    </main>
-        
-        <footer>
-
-            <div id="footer-container">
+            <header>
                 <div class="container">
-                    <div class="logo">
-                        <a id="footer-logo" href="home.html"><img src="/images/logo/silicon-logo-light_theme.svg" alt=""></a>
+                    <a id="logo" href="home.html"><img src="images/logo/silicon-logo-light_theme.svg" alt="silicon logotype"></a>
+
+                    <nav id="menu">
+                        <div class="menu-links">
+                            <a class="nav-link" href="#overview">Overview</a>
+                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" href="news.html">News</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </div>
+                    </nav>
+        
+                    <div id="theme-mode">
+                        <div class="theme-switch-wrapper">
+                            <label for="theme-toggle-switch">Light</label>
+                            <label class="theme-switch" for="theme-toggle-switch">
+                                <input type="checkbox" id="theme-toggle-switch" />
+                                <div class="slider round"></div>
+                            </label>
+                            <label for="theme-toggle-switch">Dark</label>
+                        </div>
                     </div>
-                    <div class="footer-nav">
-                        <nav id="footer-menu">
-                            <div class="menu-links">
-                                <a class="nav-link" href="#overview">Overview</a>
-                                <a class="nav-link" href="#features">Features</a>
-                                <a class="nav-link" href="news.html">News</a>
-                                <a class="nav-link" href="contact.html">Contact</a>
-                                <a class="nav-link" href="account.html">Account</a>
+        
+                    <a id="btn-account" class="btn btn-theme" href="signin.html"><i class="fa-regular fa-user"></i> Sign in / up</a>
+                    
+                    <button id="btn-menu" onclick="toggleMenu()"><i class="fa-regular fa-bars"></i></button>
+                </div>
+            </header>
+        <main>
+            <section id="contact">
+                <div class="container">
+                    <div class="contact-container">
+                        <div class="links">
+                            <i class="fa-regular fa-house"><a href="home.html">Home</a></i>
+                            <i class="fa-sharp fa-regular fa-chevrons-right"></i>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                        <div class="contact-us">
+                            <h1>Contact Us</h1>
+                        </div>
+                        <div class="contact-info">
+                            <div class="mail">
+                                <div class="mail-img">
+                                    <img src="images/icons/envelope-icon.svg" alt="Envelope icon">
+                                </div>
+                                <div class="mail-text">
+                                    <h4>Email us</h4>
+                                    <p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+                                    <button class="mail-btn"><a href="contact.html"></a>Leave a message<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                                </div>
                             </div>
-                        </nav>
-                    </div>
-                    <div class="footer-download-app">
-                        <a class="appstore" href="#"><img src="images/appstore.svg" alt="Download on Appstore"></a>
-                        <a class="googleplay" href="#"><img src="images/googleplay.svg" alt="Download on Google Play"></a>    
-                    </div> 
-                    <div class="social-media">
-                        <a href="https://facebook.com" target="_blank"><img src="/images/icons/facebook-square-icon.svg" alt="Facebook icon"></a>
-                        <a href="https://twitter.com" target="_blank"><img src="/images/icons/twitter-icon.svg" alt="Instagram icon"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="/images/icons/nstagram-icon.svg" alt="Twitter icon"></a>
-                        <a href="https://youtube.com" target="_blank"><img src="/images/icons/youtube-icon.svg" alt="Youtube icon"></a>
-                    </div> 
-                    <div class="rights">
-                        <p>2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>
+                            <div class="career">
+                                <div class="career-img">
+                                    <img src="/images/icons/add-group-icon.svg" alt="">
+                                </div>
+                                <div class="career-text">
+                                    <h4>Careers</h4>
+                                    <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                                    <button class="career-btn"><a href="contact.html"></a>Send an application<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="form">
+                                <h2>Get Online Consultation</h2>
+                                <form class="consultation-form">
+                                    <label for="fullname">Full name</label>
+                                    <input type="text">
+
+                                    <label for="email">Email address</label>
+                                    <input type="email">
+
+                                    <label for="spec">Specialist</label>
+                                    <select name="spec" id="spec"></select>
+                                    <!-- <option value="">nånting</option>
+                                    <option value="">nånting</option>
+                                    <option value="">nånting</option> -->
+                                        <div class="date-time">
+                                            <div class="date">
+                                                <label for="date">Date</label>
+                                                <select name="date" id="date">hejsant</select>
+                                            </div>
+                                            <div class="time">
+                                                <label for="time">Time</label>
+                                                <select name="time" id="time"></select>
+                                            </div>
+                                        </div>
+                                        <button class="consultation-btn">Make an appointment</button>
+                                </form> 
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </section>
+            
+            <section id="map-section">
+                <div class="map">
+                    <div class="google-map">
+                        
+                    </div>
+                </div>
 
+            </section>
+            
+        </main>
+
+            <footer>
+
+                <div id="footer-container">
+                    <div class="container">
+                        <div class="logo">
+                            <a id="footer-logo" href="home.html"><img src="/images/logo/silicon-logo-light_theme.svg" alt=""></a>
+                        </div>
+                        <div class="footer-nav">
+                            <nav id="footer-menu">
+                                <div class="menu-links">
+                                    <a class="nav-link" href="#overview">Overview</a>
+                                    <a class="nav-link" href="#features">Features</a>
+                                    <a class="nav-link" href="news.html">News</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link" href="account.html">Account</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="footer-download-app">
+                            <a class="appstore" href="#"><img src="images/appstore.svg" alt="Download on Appstore"></a>
+                            <a class="googleplay" href="#"><img src="images/googleplay.svg" alt="Download on Google Play"></a>    
+                        </div> 
+                        <div class="social-media">
+                            <a href="https://facebook.com" target="_blank"><img src="/images/icons/facebook-square-icon.svg" alt="Facebook icon"></a>
+                            <a href="https://twitter.com" target="_blank"><img src="/images/icons/twitter-icon.svg" alt="Instagram icon"></a>
+                            <a href="https://instagram.com" target="_blank"><img src="/images/icons/nstagram-icon.svg" alt="Twitter icon"></a>
+                            <a href="https://youtube.com" target="_blank"><img src="/images/icons/youtube-icon.svg" alt="Youtube icon"></a>
+                        </div> 
+                        <div class="rights">
+                            <p>2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
 
 <script>
     const toggleMenu = () => {
