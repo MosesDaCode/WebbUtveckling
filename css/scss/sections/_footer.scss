@@ -1,0 +1,78 @@
+footer{
+    margin: 0;
+    .container{
+        display: grid;
+        justify-content: center;
+    }
+    #footer-container{
+        display: grid;
+        margin: 70px 0 30px 0;
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            #footer-logo{
+                display: flex;
+                width: 150px;
+                height: 60px;
+            }
+            
+        }
+
+        .footer-nav{
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            .menu-links{
+                display: flex;
+                gap: 50px;
+                color: $gray-800;
+
+            }
+
+        }
+
+        .footer-download-app{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 0;
+        }
+
+        .social-media{
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            gap: 20px;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                border-radius: 6px;
+                height: 40px;
+                width: 40px;
+                background-color: $gray-200;
+
+            }
+        }
+
+        .rights{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 856px;
+            height: 44px;
+            padding: 30px 0;
+
+
+            @include text-s
+        }
+
+
+    }
+}
