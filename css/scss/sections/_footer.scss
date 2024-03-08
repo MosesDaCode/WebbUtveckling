@@ -59,6 +59,24 @@ footer{
                 background-color: $gray-200;
 
             }
+            .fb:hover{
+                background-color: #0d6efd;
+                img{
+                    color: white;
+                }
+            }
+
+            .x:hover{
+                background-color: #1DA1F2;
+            }
+
+            .insta:hover{
+                background-color: #405DE6;
+            }
+            
+            .yt:hover{
+                background-color: #FF0000;
+            }
         }
 
         .rights{

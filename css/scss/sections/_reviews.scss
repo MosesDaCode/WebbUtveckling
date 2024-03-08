@@ -40,6 +40,11 @@
                 align-items: center;
                 
                 @include shadow-m;
+
+                &:hover{
+                    background-color: $primary;
+                    color: white;
+                }
             }
         }
                
@@ -97,7 +102,6 @@
                 }
 
                 .box-user{
-                    // border: 1px solid red;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -109,8 +113,7 @@
                     }
 
                     .user{
-                        // border: 1px solid red;
-                        
+
                         h6{
                             margin: 0;
                         }

@@ -1,3 +1,8 @@
+@keyframes bounce-left{
+    0%, 20%, 50%, 80%, 100%{ transform:translateX(0); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-5px); }
+}
 
 .wrapper{
     
@@ -28,6 +33,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+        .fa-house, .home-link, .fa-chevrons-right{
+            color: $gray-600;
+        }
+        .contact-link{
+            color: $primary;
         }
     }
 
@@ -85,6 +96,13 @@
                         display: flex;
                         padding-left: 10px;
                     }
+
+                    &:hover{
+                        .fa-arrow-right{
+                            animation: bounce-left 0.7s infinite;
+                        }
+                    }
+                    
                 }
             }
         }
@@ -92,6 +110,7 @@
         .career{
             display: flex;
             gap: 20px;
+
             .career-img{
                 display: flex;
                 justify-content: center;
@@ -111,8 +130,6 @@
                 h4{
                     display: flex;
                     gap: 10px;
-                    
-                    
                 }
 
                 p{
@@ -133,6 +150,12 @@
                     i{
                         display: flex;
                         padding-left: 10px;
+                    }
+
+                    &:hover{
+                        .fa-arrow-right{
+                            animation: bounce-left 0.7s infinite;
+                        }
                     }
                 }
             }
@@ -216,6 +239,10 @@
                 background-color: $primary;
                 color: white;
                 font-weight: 600;
+
+                &:hover{
+                    background-color: #4044ee;;
+                }
             }
         }
     }

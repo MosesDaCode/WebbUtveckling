@@ -62,6 +62,10 @@
                         height: 44px;
                         font-family: $font-manrope;
                         font-size: 14px;
+
+                        &:hover{
+                            background-color: #4044ee;
+                        }
                     }
                 }
             }
@@ -122,8 +126,6 @@
                 .nav-link{
                     color: white;
                 }
-                
-
             }
             
 

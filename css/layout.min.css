@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 html, body {
   line-height: 160%;
@@ -598,6 +599,36 @@ header .container #btn-menu {
   }
 }
 
+@keyframes bounce-right {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes bounce-left {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+}
+.bounce-left {
+  animation: bounce-left 0.8s ease infinite;
+}
+
+.bounce-right {
+  animation: bounce-right 0.8s ease infinite;
+}
+
 #how {
   background-color: #F3F6FF;
   padding: 50px 0;
@@ -634,6 +665,10 @@ header .container #btn-menu {
   fill: #f2f2f2;
   filter: drop-shadow(0px 4px 9px rgba(19, 16, 34, 0.03)) drop-shadow(0px 4.4px 20px rgba(19, 16, 34, 0.05));
 }
+#how .how-btn:hover {
+  background: #6366F1;
+  color: white;
+}
 #how .second-step {
   display: flex;
   flex-direction: column;
@@ -651,6 +686,17 @@ header .container #btn-menu {
   }
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+}
 #more-info .info-container {
   display: flex;
   flex-wrap: wrap;
@@ -719,9 +765,21 @@ header .container #btn-menu {
   width: 130px;
   height: 44px;
   font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#more-info .info-container .learn-more-btn i {
+#more-info .info-container .learn-more-btn .btn:hover {
+  color: black;
+}
+#more-info .info-container .learn-more-btn .btn:hover .fa-arrow-right {
+  animation: bounce 0.7s infinite;
+}
+#more-info .info-container .learn-more-btn .btn:hover i {
+  text-decoration: none;
   margin-left: 9px;
+  transition: transform 0.5s;
 }
 #more-info .info-container .first-pic {
   position: relative;
@@ -780,6 +838,10 @@ header .container #btn-menu {
   align-items: center;
   fill: #f2f2f2;
   filter: drop-shadow(0px 4px 9px rgba(19, 16, 34, 0.03)) drop-shadow(0px 4.4px 20px rgba(19, 16, 34, 0.05));
+}
+#reviews .review-container .left-side-review .review-btn:hover {
+  background-color: #6366F1;
+  color: white;
 }
 #reviews .review-container .review-boxes {
   display: flex;
@@ -840,6 +902,39 @@ header .container #btn-menu {
   margin: 0;
 }
 
+@keyframes bounce-left {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+}
+@keyframes bounce-down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce-up {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
 #faq .faq-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -879,6 +974,12 @@ header .container #btn-menu {
   border-radius: 8px;
   border: 1px solid #E2E5F1;
 }
+#faq .faq-container .contact-box .box:hover {
+  background-color: white;
+  transform: translateY(-5px); /* Flytta upp lite */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Större skugga för "lyft"-effekt */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 #faq .faq-container .contact-box .box p {
   line-height: 160%;
   font-weight: 400;
@@ -904,6 +1005,7 @@ header .container #btn-menu {
   display: grid;
 }
 #faq .faq-container .right-side .accordion {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 68px;
@@ -917,32 +1019,31 @@ header .container #btn-menu {
   fill: #f2f2f2;
   filter: drop-shadow(0px 4px 9px rgba(19, 16, 34, 0.03)) drop-shadow(0px 4.4px 20px rgba(19, 16, 34, 0.05));
 }
-#faq .faq-container .right-side .fa-chevron-down {
+#faq .faq-container .right-side .fa-chevron-down, #faq .faq-container .right-side .fa-chevron-up {
   display: flex;
   width: 36px;
   height: 36px;
   padding: 8px;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 50%;
   background-color: #F3F6FF;
 }
 #faq .faq-container .right-side .fa-chevron-up {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 50%;
-  color: white;
   background-color: #6366F1;
+  color: white;
 }
 #faq .faq-container .right-side .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s ease-out;
+  transition: max-height 0.3s ease-out;
   padding: 0 24px;
+}
+#faq .faq-container .right-side .fa-chevron-down:hover {
+  animation: bounce-down 0.7s infinite;
+}
+#faq .faq-container .right-side .fa-chevron-up:hover {
+  animation: bounce-up 0.7s infinite;
 }
 #faq .subscribe-container .container {
   height: 222px;
@@ -982,6 +1083,9 @@ header .container #btn-menu {
   color: white;
   width: 142px;
   height: 50px;
+}
+#faq .subscribe-container .subscribe .right-part .sub-btn:hover {
+  background-color: #4044ee;
 }
 
 footer {
@@ -1037,6 +1141,21 @@ footer #footer-container .social-media a {
   width: 40px;
   background-color: #EFF2FC;
 }
+footer #footer-container .social-media .fb:hover {
+  background-color: #0d6efd;
+}
+footer #footer-container .social-media .fb:hover img {
+  color: white;
+}
+footer #footer-container .social-media .x:hover {
+  background-color: #1DA1F2;
+}
+footer #footer-container .social-media .insta:hover {
+  background-color: #405DE6;
+}
+footer #footer-container .social-media .yt:hover {
+  background-color: #FF0000;
+}
 footer #footer-container .rights {
   display: flex;
   justify-content: center;
@@ -1051,6 +1170,17 @@ footer #footer-container .rights {
   font-size: 14px;
 }
 
+@keyframes bounce-left {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+}
 .wrapper header {
   background-color: #F3F6FF;
 }
@@ -1071,6 +1201,12 @@ footer #footer-container .rights {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+#contact .links .fa-house, #contact .links .home-link, #contact .links .fa-chevrons-right {
+  color: #9397AD;
+}
+#contact .links .contact-link {
+  color: #6366F1;
 }
 #contact .contact-us {
   padding: 40px 0;
@@ -1124,6 +1260,9 @@ footer #footer-container .rights {
   display: flex;
   padding-left: 10px;
 }
+#contact .contact-info .mail .mail-text .mail-btn:hover .fa-arrow-right {
+  animation: bounce-left 0.7s infinite;
+}
 #contact .contact-info .career {
   display: flex;
   gap: 20px;
@@ -1168,6 +1307,9 @@ footer #footer-container .rights {
 #contact .contact-info .career .career-text .career-btn i {
   display: flex;
   padding-left: 10px;
+}
+#contact .contact-info .career .career-text .career-btn:hover .fa-arrow-right {
+  animation: bounce-left 0.7s infinite;
 }
 #contact .form {
   display: flex;
@@ -1234,6 +1376,9 @@ footer #footer-container .rights {
   color: white;
   font-weight: 600;
 }
+#contact .form .consultation-form .consultation-btn:hover {
+  background-color: #4044ee;
+}
 
 #map-section .map {
   margin-top: 275px;
@@ -1260,6 +1405,21 @@ footer #footer-container .rights {
   height: 40px;
   width: 40px;
   background-color: #EFF2FC;
+}
+#map-section .map .address .social-media .fb:hover {
+  background-color: #0d6efd;
+}
+#map-section .map .address .social-media .fb:hover img {
+  color: white;
+}
+#map-section .map .address .social-media .x:hover {
+  background-color: #1DA1F2;
+}
+#map-section .map .address .social-media .insta:hover {
+  background-color: #405DE6;
+}
+#map-section .map .address .social-media .yt:hover {
+  background-color: #FF0000;
 }
 #map-section .map .adress-info {
   display: grid;
@@ -1346,6 +1506,9 @@ footer #footer-container .rights {
   height: 44px;
   font-family: "Manrope", sans-serif;
   font-size: 14px;
+}
+#contact-footer .contact-footer-container .left-left .sub-container .subscribe .sub-btn:hover {
+  background-color: #4044ee;
 }
 #contact-footer .contact-footer-container .left-left p {
   color: white;

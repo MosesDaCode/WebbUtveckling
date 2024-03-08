@@ -1,3 +1,19 @@
+@keyframes bounce-right{
+    0%, 20%, 50%, 80%, 100%{ transform:translateX(0); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+}
+@keyframes bounce-left{
+    0%, 20%, 50%, 80%, 100%{ transform:translateX(0); }
+    40% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+}
+.bounce-left{
+    animation: bounce-left 0.8s ease infinite;
+}
+.bounce-right{
+    animation: bounce-right 0.8s ease infinite;
+}
 #how{
     background-color: $gray-100;
     padding: 50px 0;
@@ -40,6 +56,13 @@
         align-items: center;
         left: 8rem;
         @include shadow-m;
+
+
+        &:hover{
+            background: $primary;
+            color: white;
+        }
+        
     }
 
     .second-step{

@@ -1,3 +1,9 @@
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{ transform:translateX(0); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-5px); }
+}
+
 #more-info{
     
     
@@ -73,13 +79,30 @@
                 height: 44px;
                 font-size: 14px;
 
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                &:hover{
+                    color: black;
+                    .fa-arrow-right{
+                        animation: bounce 0.7s infinite;
+                    }
+
+                    i{
+                        text-decoration: none;
+                        margin-left: 9px;
+                        transition: transform 0.5s;
+                    }
+                }
+                
+                
             }
-            i{
-                margin-left: 9px;
-            }
-             
            
         }
+        
 
         .first-pic{
             position: relative;
