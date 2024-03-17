@@ -1359,8 +1359,13 @@ footer #footer-container .rights {
   gap: 21px;
   flex-shrink: 0;
 }
-#contact .form .consultation-form .date-time .date select, #contact .form .consultation-form .date-time .time select {
+#contact .form .consultation-form .date-time .date input, #contact .form .consultation-form .date-time .time input {
   width: 234px;
+}
+#contact .form .consultation-form .error {
+  display: block;
+  color: red;
+  font-size: 0.8rem;
 }
 #contact .form .consultation-form .consultation-btn {
   display: flex;
@@ -1560,5 +1565,8 @@ footer #footer-container .rights {
   padding-top: 73px;
 }
 #contact-footer .contact-footer-container .right-right .right-right-nav .nav-link {
+  color: white;
+}
+#contact-footer .contact-footer-container .right-right .contact-us {
   color: white;
 }

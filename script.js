@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-const leftBtn = document.querySelector('.how-btn:first-of-type');
-const rightBtn = document.querySelector('.how-btn:last-of-type');
+    const leftBtn = document.querySelector('.how-btn:first-of-type');
+    const rightBtn = document.querySelector('.how-btn:last-of-type');
 
-leftBtn.addEventListener('mouseover', () => leftBtn.classList.add('bounce-left'));
-leftBtn.addEventListener('mouseout', () => leftBtn.classList.remove('bounce-left'));
+    leftBtn.addEventListener('mouseover', () => leftBtn.classList.add('bounce-left'));
+    leftBtn.addEventListener('mouseout', () => leftBtn.classList.remove('bounce-left'));
 
-rightBtn.addEventListener('mouseover', () => rightBtn.classList.add('bounce-right'));
-rightBtn.addEventListener('mouseout', () => rightBtn.classList.remove('bounce-right'));
+    rightBtn.addEventListener('mouseover', () => rightBtn.classList.add('bounce-right'));
+    rightBtn.addEventListener('mouseout', () => rightBtn.classList.remove('bounce-right'));
 
 
 });
@@ -79,3 +79,92 @@ document.addEventListener("DOMContentLoaded", function(){
         arrowIcon.classList.remove('bounce');
     });
 });
+
+
+document.querySelectorAll('form').forEach(form => {
+    let inputs = form.querySelectorAll('input[data-val="true"], select[data-val="true"]')
+
+    inputs.forEach(input => {
+
+        input.addEventListener('change', (e) => {
+            switch (e.target.type){
+                case 'text':
+                    textValidator(e);
+                    break;
+                case 'email':
+                    emailValidator(e)
+                    break;
+            }
+        });
+    });
+});
+
+const textValidator = (e, minLength = 2) => {
+
+    let sibling = e.target.nextElementSibling;
+
+    if (e.target.value.length >= minLength){
+        sibling.innerHTML = "";
+        return true;
+    }
+
+    sibling.innerHTML = e.target.dataset.valRequired;
+    return false;
+};
+
+const emailValidator = (e) => {
+    let sibling = e.target.nextElementSibling;
+
+    const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (regEx.test(e.target.value)) {
+        sibling.innerHTML = "";
+        return true;
+    }
+
+    sibling.innerHTML = e.target.dataset.valRequired;
+    return false;
+};
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', async () => {
+    async function fetchSpecialistsAndFillSelect() {
+        const selectElement = document.getElementById('spec');
+        if (!selectElement) {
+            console.error('Select element #spec not found');
+            return;
+        }
+
+        try {
+            const response = await fetch('https://kyhnet23-assignment.azurewebsites.net/api/specialists', {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const specialists = await response.json();
+
+            selectElement.innerHTML = '<option value="">Välj en specialist</option>';
+
+            specialists.forEach(specialist => {
+                const option = new Option(`${specialist.firstName} ${specialist.lastName}`, specialist.id);
+                selectElement.add(option);
+            });
+        } catch (error) {
+            console.error('Could not fetch specialists:', error);
+        }
+    }
+
+    await fetchSpecialistsAndFillSelect();
+
+});
+
+
+
+    

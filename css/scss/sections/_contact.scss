@@ -219,10 +219,17 @@
 
                 .date, .time{
 
-                    select{
+                    input{
                         width: 234px;
                     }
                 }
+
+                
+            }
+            .error{
+                display: block;
+                color: red;
+                font-size: 0.8rem;
             }
             .consultation-btn{
                 display: flex;
