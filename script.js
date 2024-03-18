@@ -131,7 +131,8 @@ const emailValidator = (e) => {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    async function fetchSpecialistsAndFillSelect() {
+    
+    async function fetchSpecialistsSelect() {
         const selectElement = document.getElementById('spec');
         if (!selectElement) {
             console.error('Select element #spec not found');
@@ -161,10 +162,49 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    await fetchSpecialistsAndFillSelect();
-
-});
-
-
+    await fetchSpecialistsSelect();
 
     
+    const form = document.getElementById('consultationForm');
+    if (form) {
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const jsonData = {
+                fullName: formData.get('fullname'),
+                email: formData.get('email'),
+                specialist: formData.get('spec'),
+                date: formData.get('date'),
+                time: formData.get('time')
+            };
+
+            try {
+                const response = await fetch('https://kyhnet23-assignment.azurewebsites.net/api/book-appointment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(jsonData),
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Server responded with ${response.status}`);
+                }
+
+                
+                if (response.headers.get('Content-Length') && parseInt(response.headers.get('Content-Length')) > 0) {
+                    const data = await response.json();
+                    console.log(data);
+                }
+
+                alert('Formuläret har skickats och mottagits av specialisten!');
+                form.reset();
+            } catch (error) {
+                console.error('There was a problem with your submission:', error);
+                alert(`Ett fel uppstod när formuläret skickades. ${error.message}`);
+            }
+        });
+    } else {
+        console.error('Formuläret "consultationForm" hittades inte på sidan.');
+    }
+});
