@@ -1,17 +1,17 @@
 # WebbUtveckling
 
-## Beskrivning
+## Description
 
-WebbUtveckling är en frontendsida utvecklad för att visa upp webbutvecklingskunskaper. Sidan innehåller moderna designprinciper och interaktiva element, med fokus på användarupplevelse och gränssnittsdesign.
+WebbUtveckling is a frontend site developed to showcase web development skills. The site incorporates modern design principles and interactive elements, focusing on user experience and interface design.
 
-## Teknologier
+## Languages
 
-Projektet är byggt med följande teknologier:
+The project is built with the following languages:
 - HTML
 - CSS
 - SCSS
 - JavaScript
 
-## Live-version
+## Live Version
 
-Du kan besöka den live-versionen av sidan [här](https://siliconcrypto.azurewebsites.net/).
+You can visit the live version of the site [here](https://siliconcrypto.azurewebsites.net/).
