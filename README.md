@@ -2,7 +2,15 @@
 
 ## Beskrivning
 
-WebbUtveckling är en frontendsida utvecklad för att visa upp webbutvecklingskunskaper. Sidan innehåller moderna designprinciper och interaktiva element, fokuserar på användarupplevelse och gränssnittsdesign.
+WebbUtveckling är en frontendsida utvecklad för att visa upp webbutvecklingskunskaper. Sidan innehåller moderna designprinciper och interaktiva element, med fokus på användarupplevelse och gränssnittsdesign.
+
+## Teknologier
+
+Projektet är byggt med följande teknologier:
+- HTML
+- CSS
+- SCSS
+- JavaScript
 
 ## Live-version
 
